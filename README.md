@@ -5,7 +5,7 @@
 
 ## Install
 
-[Download BulkUrlRequester](https://github.com/chiefman1/bulk-url-requester.git)
+[Download BulkUrlRequester](https://github.com/chiefman1/bulk-url-requester/archive/main.zip)
 
 ```
 npm install bulk-url-requester
