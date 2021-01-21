@@ -1,7 +1,17 @@
 # bulk-url-requester
-BulkUrlRequester is a package that gets an array of URLs that point to json files and returns the content of the json in a promise.
+![npm](https://img.shields.io/npm/v/bulk-url-requester)   
 
-# Usage
+`BulkUrlRequester` is a package that gets an array of URLs that point to json files and returns the content of the json in a promise.
+
+## Install
+
+[Download BulkUrlRequester](https://github.com/chiefman1/bulk-url-requester.git)
+
+```
+npm install bulk-url-requester
+```
+
+## Usage example
 ```
 const bulkUrlRequester = require('bulk-url-requester')
 
@@ -11,19 +21,28 @@ const bulkUrlRequester = require('bulk-url-requester')
   ];
 
 const requestMultipleUrls = async()=> {
-   const data = await bulkUrlRequester(urls)
-    .then(data => console.log(data))
-    .catch(e => console.error(e))
+    let data;
+    try {
+        data = await bulkUrlRequester(urls);
+    } catch (e) {
+        console.log(e.message);
+    }
+    console.log(data)
 }
 
 ```
-# Dependencies
+## Dependencies
 * [Node-fetch](https://www.npmjs.com/package/node-fetch)
 
-# Dev Dependencies
+## Dev Dependencies
 * [JEST](https://www.npmjs.com/package/jest)
 
-# Test Coverage (JEST)
+## Test Coverage (JEST)
+
+```
+npm install
+jest --coverage
+```
 
 100% Statements 10/10   
 100% Branches 4/4   

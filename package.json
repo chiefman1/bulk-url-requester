@@ -1,6 +1,6 @@
 {
   "name": "bulk-url-requester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BulkUrlRequester is a package that gets an array of URLs that point to json files and returns the content of the json in a promise.",
   "main": "index.js",
   "repository": "chiefman1/bulk-url-requester",
